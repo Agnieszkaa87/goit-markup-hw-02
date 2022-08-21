@@ -5,59 +5,88 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WebStudio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header>
-            <a href="./index.html">WebStudio</a>
+        <header class="header">
+            <a class="header__logo" href="./index.html"
+                ><span class="header__logo-span">Web</span>Studio</a
+            >
             <nav>
-                <ul>
-                    <li><a href="">Studio</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul class="header__nav-list">
+                    <li>
+                        <a class="header__nav-element" href="./index.html"
+                            >Agencja</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header__nav-element" href="./portfolio.html"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li><a class="header__nav-element" href="">Contact</a></li>
                 </ul>
             </nav>
-            <ul>
+            <ul class="header__nav-list">
                 <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a
+                        class="header__contact-element"
+                        href="mailto:info@devstudio.com"
+                        >info@devstudio.com</a
+                    >
                 </li>
-                <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+                <li>
+                    <a class="header__contact-element" href="tel:+48111111111"
+                        >+48 111 111 111</a
+                    >
+                </li>
             </ul>
         </header>
 
         <main>
-            <section>
-                <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button type="button">Zamów usługę</button>
+            <section class="top-section">
+                <h1 class="top-section__headline">
+                    Efektywne rozwiązania dla Waszego biznesu
+                </h1>
+                <button class="top-section__button" type="button">
+                    Zamów usługę
+                </button>
             </section>
-            <section>
-                <ul>
+            <section class="our-qualities">
+                <ul class="our-qualities__list">
                     <li>
-                        <h3>LOREM IPSUM</h3>
-                        <p>
+                        <h3 class="our-qualities__name">Lorem Ipsum</h3>
+                        <p class="our-qualities__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
                         </p>
                     </li>
                     <li>
-                        <h3>LOREM IPSUM</h3>
-                        <p>
+                        <h3 class="our-qualities__name">Lorem Ipsum</h3>
+                        <p class="our-qualities__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
                         </p>
                     </li>
                     <li>
-                        <h3>LOREM IPSUM</h3>
-                        <p>
+                        <h3 class="our-qualities__name">Lorem Ipsum</h3>
+                        <p class="our-qualities__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
                         </p>
                     </li>
                     <li>
-                        <h3>LOREM IPSUM</h3>
-                        <p>
+                        <h3 class="our-qualities__name">Lorem Ipsum</h3>
+                        <p class="our-qualities__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nam vel arcu sem. Sed non sodales dui.
                             Interdum et malesuada
@@ -65,11 +94,12 @@
                     </li>
                 </ul>
             </section>
-            <section>
-                <h2>Czym się zajmujemy</h2>
-                <ul>
+            <section class="our-services">
+                <h2 class="our-services__title">Czym się zajmujemy</h2>
+                <ul class="our-services__list">
                     <li>
                         <img
+                            class="our-services__picture"
                             src="images/img1_1.jpg"
                             alt="Plan"
                             width="370"
@@ -78,6 +108,7 @@
                     </li>
                     <li>
                         <img
+                            class="our-services__picture"
                             src="images/img1_2.jpg"
                             alt="Projekt"
                             width="370"
@@ -86,6 +117,7 @@
                     </li>
                     <li>
                         <img
+                            class="our-services__picture"
                             src="images/img1_3.jpg"
                             alt="Styl"
                             width="370"
@@ -94,11 +126,11 @@
                     </li>
                 </ul>
             </section>
-            <section>
-                <h2>Nasz zespół</h2>
-                <ul>
+            <section class="our-team">
+                <h2 class="our-team__title">Nasz zespół</h2>
+                <ul class="our-team__list">
                     <li>
-                        <figure>
+                        <figure class="our-team__figure">
                             <img
                                 src="images/img2_1.jpg"
                                 alt="John Doe"
@@ -106,13 +138,15 @@
                                 height="260"
                             />
                             <figcaption>
-                                <h3>John Doe</h3>
-                                <p>Product Designer</p>
+                                <h3 class="our-team__name">John Doe</h3>
+                                <p class="our-team__position">
+                                    Product Designer
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure class="our-team__figure">
                             <img
                                 src="images/img2_2.jpg"
                                 alt="John Doe"
@@ -120,13 +154,15 @@
                                 height="260"
                             />
                             <figcaption>
-                                <h3>John Doe</h3>
-                                <p>Frontend Developer</p>
+                                <h3 class="our-team__name">John Doe</h3>
+                                <p class="our-team__position">
+                                    Frontend Developer
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure class="our-team__figure">
                             <img
                                 src="images/img2_3.jpg"
                                 alt="John Doe"
@@ -134,13 +170,13 @@
                                 height="260"
                             />
                             <figcaption>
-                                <h3>John Doe</h3>
-                                <p>Marketing</p>
+                                <h3 class="our-team__name">John Doe</h3>
+                                <p class="our-team__position">Marketing</p>
                             </figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
+                        <figure class="our-team__figure">
                             <img
                                 src="images/img2_4.jpg"
                                 alt="John Doe"
@@ -148,8 +184,8 @@
                                 height="260"
                             />
                             <figcaption>
-                                <h3>John Doe</h3>
-                                <p>UI Designer</p>
+                                <h3 class="our-team__name">John Doe</h3>
+                                <p class="our-team__position">UI Designer</p>
                             </figcaption>
                         </figure>
                     </li>
@@ -157,16 +193,28 @@
             </section>
         </main>
 
-        <footer>
-            <a href="/">WebStudio</a>
+        <footer class="footer">
+            <a class="footer__logo" href="/"
+                ><span class="footer__logo-span">Web</span>Studio</a
+            >
             <address>
-                <ul>
-                    <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-                    <li>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                <ul class="footer__list">
+                    <li class="footer__address-element">
+                        m. Warszawa, Aleje Jerozolimskie 21
                     </li>
                     <li>
-                        <a href="tel:+48111111111">+48 111 111 111</a>
+                        <a
+                            class="footer__contact-element"
+                            href="mailto:info@example.com"
+                            >info@example.com</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="footer__contact-element"
+                            href="tel:+48111111111"
+                            >+48 111 111 111</a
+                        >
                     </li>
                 </ul>
             </address>
